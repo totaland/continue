@@ -70,6 +70,13 @@ npm link
 
 popd
 
+# Build internal packages needed by GUI/Extension
+echo "Building @continuedev/config-yaml package..."
+pushd packages/config-yaml
+npm install # Ensure its specific deps are met
+npm run build
+popd
+
 echo "Installing GUI extension dependencies..."
 pushd gui
 npm install

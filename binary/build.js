@@ -205,6 +205,7 @@ async function installNodeModuleInTempDirAndCopyToCurrent(packageName, toCopy) {
       "tiktokenWorkerPool.mjs",
       "vscode",
       "./index.node",
+      "apache-arrow",
     ],
     format: "cjs",
     platform: "node",
